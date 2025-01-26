@@ -1,6 +1,9 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import '@fontsource-variable/azeret-mono'
+import Scroller from '../components/Scroller.astro';
 ---
 
 <html lang="en">
@@ -11,9 +14,12 @@ import '@fontsource-variable/azeret-mono'
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
+	<Navigation />
 	<body>
-		<h1>Gareth Gillespie</h1>
-		<h2>this is a second heading</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptatibus vel quia autem et harum labore voluptate, iste aliquid quaerat voluptatem vitae expedita aspernatur quam repudiandae assumenda numquam distinctio saepe?</p>
+		<h1>Hello!</h1>
+		<p>I’m Gareth, a web and graphic designer from Northern Ireland. I’ve been pushing pixels since 2009.</p>
+		<h3>Tools:</h3>
+		<Scroller />
 	</body>
+	<Footer />
 </html>

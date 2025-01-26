@@ -10,6 +10,34 @@ html {
     background-color: #FFF7ED;
     font-family: 'Azeret Mono Variable', monospace;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.website-icon {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5rem
+}
+
+.btn {
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    border-radius: 40px;
+    border: 1px solid #121212;
+    text-decoration: none;
+    color: #121212;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #121212;
+    color: #FFF7ED;
+}
   
 body {
     margin: 0 auto;
@@ -38,4 +66,19 @@ p {
 }
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    border-top: 1px solid #121212;
+    padding: 1rem 0rem 2rem 0rem;
+    text-align: center;
+}
+
+.before-footer {
+    padding: 1.4rem;
 }

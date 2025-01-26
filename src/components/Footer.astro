@@ -1,0 +1,11 @@
+---
+
+---
+<div class="before-footer"></div>
+<footer>
+    <small>Copyright &copy; <span id="footer-year"></span> Gareth Gillespie | All rights reserved</small>
+</footer>
+
+<script is:inline>
+    document.getElementById("footer-year").innerText = new Date().getFullYear();
+</script>

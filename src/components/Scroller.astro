@@ -1,0 +1,61 @@
+---
+---
+
+<div class="scroller">
+    <ul class="logo-list scroller-inner">
+        <li><img src="/src/assets/affinity.svg" /></li>
+        <li><img src="/src/assets/ai.svg" /></li>
+        <li><img src="/src/assets/id.svg" /></li>
+        <li><img src="/src/assets/ps.svg" /></li>
+        <li><img src="/src/assets/blender.svg" /></li>
+        <li><img src="/src/assets/figma.svg" /></li>
+        <li><img src="/src/assets/wp.svg" /></li>
+        <li><img src="/src/assets/avada.svg" /></li>
+        <li><img src="/src/assets/css.svg" /></li>
+        <li><img src="/src/assets/html.svg" /></li>
+        <li><img src="/src/assets/js.svg" /></li>
+        <li><img src="/src/assets/elementor.svg" /></li>
+    </ul>
+</div>
+
+<style>
+.logo-list {
+    list-style: none;
+}
+
+.logo-list img {
+    height: 40px;
+}
+
+.scroller {
+    max-width: 1200px;
+}
+
+.scroller-inner {
+    padding-block: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller-inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 50s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+</style>
+
+<script>
+    import "../scripts/scroller.js"
+</script>
