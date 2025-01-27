@@ -82,3 +82,74 @@ footer {
 .before-footer {
     padding: 1.4rem;
 }
+
+.home-main {
+    display: flex;
+    border: 1px solid #121212;
+    margin-bottom: 1rem;
+}
+
+.main-col-1 {
+    background-image: url(/gareth-gillespie-profile-pic.jpg);
+    aspect-ratio: 1/1;
+    width: 40%;
+    border-right: 1px solid #121212;
+}
+
+.main-col-2 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.main-col-2, a {
+    color: #121212;
+}
+
+.main-col-1, h1 {
+    font-size: 4rem;
+}
+
+hr {
+    margin: 1.25rem 0 1.25rem 0;
+    border-top: 1px solid #121212;
+}
+
+.abt-edu-port {
+    display: flex;
+}
+
+.about-col {
+    width: 30%;
+}
+
+.about-col h3 {
+    font-weight: 800;
+}
+
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 2rem;
+}
+
+.work-xp-cols {
+    display: flex;
+    gap: 2rem;
+}
+
+.work-xp-col-1 {
+    width: 40%;
+}
+
+.work-xp-col-2 {
+    width: 60%;
+}
+
+.work-xp-col-2 p {
+    font-size: 0.9rem;
+}
