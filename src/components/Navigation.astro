@@ -1,9 +1,10 @@
 ---
-
+import { Image } from "astro:assets";
+import homeImage from "../assets/home.svg"
 ---
 <nav aria-label="Primary">
     <div>
-        <p class="website-icon"><a href="/"><img src="home.svg"></a></p>
+        <p class="website-icon"><a href="/"><Image src={homeImage} alt="Home Image"></a></p>
     </div>
     <div>
         <a href="/portfolio" aria-label="My Portfolio" class="btn-no-border hide-mobile">Portfolio</a>
