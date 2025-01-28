@@ -1,21 +1,10 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import '@fontsource-variable/azeret-mono'
-import Scroller from '../components/Scroller.astro';
+import MainLayout from '../Layouts/MainLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Gareth Gillespie | Portfolio</title>
-	</head>
-	<Navigation />
-	<body>
+<MainLayout title='Gareth Gillespie | Resume' description="My name is Gareth Gillespie, I'm a Graphic designer from Portadown, Northern Ireland">
 		<main class="home-main">
 			<div class="main-col-1">
 			</div>
@@ -23,53 +12,46 @@ import Scroller from '../components/Scroller.astro';
 				<h1>Hello!</h1>
 				<p>I’m Gareth, a web and graphic designer from Northern Ireland. I’ve been pushing pixels since 2009.</p>
 				<hr />
-				<p>Gareth Gillespie | Graphic Designer | <a href="mailto:gareth@gillespiemedia.co.uk">gareth@gillespiemedia.co.uk</a></p>
+				<p>Gareth Gillespie | Graphic Designer | <a href="mailto:gareth@gillespiemedia.co.uk" class="link">gareth@gillespiemedia.co.uk</a></p>
 			</div>
 		</main>
 		<section class="abt-edu-port margin-bottom-2">
 			<div class="about-col">
+				<a href="/portfolio" class="btn hide-desktop">Portfolio</a>
 				<h2>About</h2>
 				<hr />
-				<p class="margin-bottom">I’m Gareth, I’m a Graphic Designer & Web Designer. In my spare time, I can be found wandering mountains, being a dad, and (when the dad part is done) playing video games. My goal when I wake up each day, is to know more at the end of the day than I did at the start. I love learning, growth and pushing pixels.</p>
+				<p class="margin-bottom-2">I’m Gareth, I’m a Graphic Designer & Web Designer. In my spare time, I can be found hiking, being a dad, and (when the dad part is done) playing video games. My goal when I wake up each day, is to know more at the end of the day than I did at the start. I love learning, growth and pushing pixels.</p>
+				<a href="/portfolio" class="btn hide-mobile">Portfolio</a>
+				<h3 class="margin-bottom margin-top-2">Tools I use regularly:</h3>
+				<hr />
+				<div class="logos">
+					<img src="/ai.webp" alt="">
+					<img src="/ps.webp" alt="">
+					<img src="/id.webp" alt="">
+					<img src="/css.webp" alt="">
+					<img src="/html.webp" alt="">
+					<img src="/wp.webp" alt="">
+					<img src="/js.webp" alt="">
+					<img src="/figma.webp" alt="">
+					<img src="/affinity.webp" alt="">
+					<img src="/blender.webp" alt="">
+					<img src="/elementor.webp" alt="">
+					<img src="/avada.webp" alt="">
+				</div>
+			</div>
+			<div class="edu-and-work-col">
 				<h2>Education</h2>
 				<hr />
 				<h3>HND Interactive Media</h3>
 				<p class="margin-bottom"><em>SRC Banbridge | 2007 - 2009</em></p>
-				<p class="margin-bottom">This is where I learned that using Adobe and being a creative person was a viable option for my future survival. I’ve been pushing pixels ever since.</p>
-				<p><strong>Key bits I learned here:</strong></p>	
-				<p>Web design</p>
-				<p>Graphic Design</p>
-				<p>Team Projects</p>
-				<p>Working to a brief</p>
-				<p class="margin-bottom">3D modelling</p>
+				<p class="margin-bottom"><strong>Key bits I learned here:</strong> Web design, Graphic Design, Team Projects, Working to a brief, 3D modelling</p>
 				<h3>National Diploma in Media (Moving Image)</h3>
 				<p class="margin-bottom"><em>SRC Banbridge | 2005 - 2007</em></p>
-				<p class="margin-bottom">Mini DV tapes, firewires, Mac OSX, capturing tape (no downloading from an SD card), editing video from a shot log, those were the days.</p>
-				<p><strong>Key bits I learned here:</strong></p>	
-				<p>Video editing (Premiere Pro & Final Cut)</p>
-				<p>Script Writing</p>
-				<p>Storyboarding</p>
-				<p>Animation (clay, stop frame & 3d)</p>
-				<p class="margin-bottom">Photography (film & digital)</p>
-				<h3>GCSEs (9 of them)</h3>
+				<p class="margin-bottom"><strong>Key bits I learned here:</strong> Video editing (Premiere Pro & Final Cut), Script Writing, Storyboarding, Animation (clay, stop frame & 3d), Photography (film & digital)</p>
+				<h3>GCSEs (9 including Maths & English)</h3>
 				<p class="margin-bottom"><em>Portadown College | 2003-2005</em></p>
-				<p class="margin-bottom">Did well in History and English, got an A in those. There were other subjects too, Maths, Science (bunsen burner + magnesium = sore eyes), Technology & Design, ICT etc. Passed the lot, then went and chased my passion.</p>
-				<p><strong>Key bits I learned here:</strong></p>
-				<p>I’m not good at French</p>
-				<p>Algebra isn't that bad</p>
-				<p>Making a website in Word is not the way</p>
-				<p>Being a bit of a nerd is ok (there's more than one of us)</p>
-			</div>
-			<div class="portfolio-grid">
-
-			</div>
-		</section>
-		<div class="margin-bottom-2">
-			<h3>Tools I use regularly:</h3>
-			<Scroller />
-		</div>
-		<section class="work-xp">
-			<h2>Work Experience</h2>
+				<p class="margin-bottom-2"><strong>Key bits I learned here:</strong> I’m not good at French, Algebra isn't that bad, Making a website in Word is not the way, Being a bit of a nerd is ok (there's more than one of us)</p>
+				<h2>Work Experience</h2>
 			<hr />
 			<div class="work-xp-cols margin-bottom">
 				<div class="work-xp-col-1">
@@ -119,7 +101,6 @@ import Scroller from '../components/Scroller.astro';
 					<p class="margin-bottom">I was involved in laying out more creative aspects such as advertorial inserts, mini magazines for fashion, tourism and more. Using the Adobe suite, and content provided by our editors.</p>
 				</div>
 			</div>
+			</div>
 		</section>
-	</body>
-	<Footer />
-</html>
+	</MainLayout>

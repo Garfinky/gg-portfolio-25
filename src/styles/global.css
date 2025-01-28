@@ -38,6 +38,27 @@ nav {
     background-color: #121212;
     color: #FFF7ED;
 }
+
+.btn-no-border {
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    color: #121212;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-no-border:hover {
+    opacity: 0.5;
+}
+
+.link {
+    color: #121212;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link:hover {
+    opacity: 0.5;
+}
   
 body {
     margin: 0 auto;
@@ -86,7 +107,7 @@ footer {
 .home-main {
     display: flex;
     border: 1px solid #121212;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .main-col-1 {
@@ -119,10 +140,15 @@ hr {
 
 .abt-edu-port {
     display: flex;
+    gap: 3rem;
 }
 
 .about-col {
     width: 30%;
+}
+
+.edu-and-work-col {
+    width: 75%;
 }
 
 .about-col h3 {
@@ -135,6 +161,10 @@ hr {
 
 .margin-bottom-2 {
     margin-bottom: 2rem;
+}
+
+.margin-top-2 {
+    margin-top: 2rem;
 }
 
 .work-xp-cols {
@@ -152,4 +182,61 @@ hr {
 
 .work-xp-col-2 p {
     font-size: 0.9rem;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    gap: 0.5rem;
+}
+
+.logos img {
+    height: 27px;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .work-xp-cols {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .work-xp-col-1, .work-xp-col-2, .about-col, .edu-and-work-col {
+        width: 100%;
+    }
+
+    .home-main {
+        flex-direction: column;
+    }
+
+    .home-main p {
+        font-size: 0.8rem;
+    }
+
+    .main-col-1 {
+        width: 100%;
+        border-right: 0px;
+        border-bottom: 1px solid #121212;
+    }
+
+    .abt-edu-port {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .hide-desktop {
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
 }
