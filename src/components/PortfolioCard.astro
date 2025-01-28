@@ -1,0 +1,24 @@
+---
+import { string } from 'astro:schema';
+import '../styles/global.css';
+interface Props {
+    title: string;
+    listItemOne?: string;
+    listItemTwo?: string;
+    listItemThree?: string;
+    link: string;
+}
+
+const { title, listItemOne, listItemTwo, listItemThree, link } = Astro.props
+---
+<section class="portfolio-card">
+    <h2>{title}</h2>
+    <ul>
+        <li>{listItemOne}</li>
+        <li>{listItemTwo}</li>
+        <li>{listItemThree}</li>
+    </ul>
+    <div class="portfolio-card-link">
+        <a href={link} class="btn-portfolio">Click Here</a>
+    </div>
+</section>
