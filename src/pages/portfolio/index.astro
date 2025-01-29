@@ -1,0 +1,20 @@
+---
+import '../../styles/global.css';
+import '@fontsource-variable/azeret-mono'
+import MainLayout from '../../Layouts/MainLayout.astro';
+import PortfolioCard from '../../components/PortfolioCard.astro';
+---
+
+<MainLayout title='Gareth Gillespie | Portfolio' description="Check out some of my graphic design & web design portfolio">
+		<main class="portfolio-main">
+			<h1 class="smaller-h1">Portfolio</h1>
+			<div class="info">
+				<p>Check out some of my latest graphic design and web design projects. Alongside some 3D modelling, and packaging design.</p>
+			</div>
+		</main>
+		<PortfolioCard link='/portfolio/chaos-crew' listItemOne='Graphic Design' listItemTwo='Website Design' listItemThree='Packaging Design' title='Chaos Crew' />
+		<PortfolioCard title='Muscle Rage' listItemOne='Website Design' listItemTwo='Graphic Design' listItemThree='Packaging Design' link='/portfolio/muscle-rage' />
+		<PortfolioCard title='Shapeshifter Nutrition' listItemOne='E-mail Marketing' listItemTwo='Graphic Design' listItemThree='Website Design' link='/portfolio/shapeshifter' />
+		<!--<PortfolioCard title='Packaging Design' listItemOne='Adobe CC' listItemTwo='Affinity' listItemThree='Product Development' link='/portfolio/packaging-design' />
+		<PortfolioCard title='Content Creation' listItemOne='Video Editing' listItemTwo='3D modelling' listItemThree='Meta Ads' link='/portfolio/content-creation' /> -->
+</MainLayout>

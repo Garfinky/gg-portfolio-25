@@ -111,7 +111,7 @@ footer {
 }
 
 .main-col-1 {
-    background-image: url(/gareth-gillespie-profile-pic.jpg);
+    background-image: url(/gareth-gillespie-profile-pic.webp);
     aspect-ratio: 1/1;
     width: 40%;
     border-right: 1px solid #121212;
@@ -261,6 +261,70 @@ hr {
     font-size: 1rem;
 }
 
+.tools {
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.tools p {
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.tools ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.tools ul li {
+    padding: 0.5rem 2rem;
+    border: 1px solid #121212;
+    border-radius: 60px;
+}
+
+.port-top {
+    display: flex;
+    max-width: 1200px;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.port-img-1 {
+    width: 74%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border: 1px solid #121212;
+    background-position: center;
+}
+
+.port-info-1 {
+    width: 25%;
+}
+
+.port-grid {
+    display: grid;
+    margin-top: 3rem;
+    gap: 1rem;
+    row-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 3rem;
+}
+
+.img-border {
+    border: 1px solid #121212;
+}
+
+.column-span {
+    grid-column: 1/3;
+}
+
+.column-span-1 {
+    grid-column: 2/4;
+}
+
 @media only screen and (max-width: 600px) {
     .work-xp-cols {
         display: flex;
@@ -303,7 +367,7 @@ hr {
     }
 
     .smaller-h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .portfolio-card ul {
@@ -327,4 +391,33 @@ hr {
         font-size: 0.8rem;
     }
 
+    .tools ul {
+        flex-wrap: wrap;
+    }
+
+    .port-top {
+        flex-wrap: wrap;
+    }
+
+    .port-info-1 {
+        width: 100%;
+    }
+
+    .port-img-1 {
+        width: 100%;
+        height: auto;
+        object-fit: fit;
+    }
+
+    .port-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tools {
+        align-items: flex-start;
+    }
+
+    .column-span, .column-span-1 {
+        grid-column: auto;
+    }
 }
