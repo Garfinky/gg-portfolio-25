@@ -1,0 +1,37 @@
+---
+---
+<a href="#">
+    <div id="to-top">
+        <p class="btn">Back to top</p>
+    </div>
+</a>
+
+<style>
+    #to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        transform: scale(0);
+        transition: bottom 200ms, transform 200ms;
+    }
+
+    #to-top:hover {
+        bottom: 35px;
+    }
+
+    #to-top.show {
+        transform: scale(1);
+    }
+</style>
+
+<script>
+    document.addEventListener('scroll', () => {
+        const toTopButton = document.getElementById('to-top');
+
+        if (window.scrollY > 200) {
+            toTopButton?.classList.add('show');
+        } else {
+            toTopButton?.classList.remove('show');
+        }
+    });
+</script>

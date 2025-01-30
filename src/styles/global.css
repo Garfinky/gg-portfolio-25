@@ -9,6 +9,7 @@
 html {
     background-color: #FFF7ED;
     font-family: 'Azeret Mono Variable', monospace;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -115,6 +116,8 @@ footer {
     aspect-ratio: 1/1;
     width: 40%;
     border-right: 1px solid #121212;
+    background-repeat: no-repeat;
+    object-fit: contain;
 }
 
 .main-col-2 {
