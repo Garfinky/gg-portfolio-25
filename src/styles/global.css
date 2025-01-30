@@ -33,6 +33,7 @@ nav {
     color: #121212;
     cursor: pointer;
     transition: 0.3s;
+    background-color: #FFF7ED;
 }
 
 .btn:hover {
