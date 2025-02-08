@@ -119,6 +119,8 @@ footer {
     border-right: 1px solid #121212;
     background-repeat: no-repeat;
     object-fit: contain;
+    background-size: cover;
+    background-position: center;
 }
 
 .main-col-2 {
@@ -228,6 +230,7 @@ hr {
     margin-top: 1rem;
     padding-left: 0;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .portfolio-card li {
@@ -329,7 +332,7 @@ hr {
     grid-column: 2/4;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .work-xp-cols {
         display: flex;
         flex-direction: column;
